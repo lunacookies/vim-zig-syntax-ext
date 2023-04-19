@@ -38,7 +38,7 @@ syntax keyword zxRepeat for while continue
 
 syntax keyword zxException error try catch
 
-syntax keyword zxKeyword pub fn const var defer return break inline
+syntax keyword zxKeyword pub fn const var defer return break inline test
 
 syntax match zxNumber '\v<[0-9]+(\.[0-9]+)?>'
 
