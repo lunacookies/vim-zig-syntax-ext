@@ -8,7 +8,7 @@ syntax match zxOperator '[+\-*/&!=<>?|%]'
 
 syntax match zxFunction '\v<[a-z][a-zA-Z0-9_]*(\()@='
 syntax match zxFieldOrEnum '\v(\s+)@<=\.[a-z][a-zA-Z0-9_]*>'
-syntax match zxIdentifierDef '\v(var|const\s+)@<=<[a-zA-Z][a-zA-Z0-9_]*>'
+syntax match zxIdentifierDef '\v((var|const)\s+)@<=<[a-zA-Z][a-zA-Z0-9_]*>'
 syntax match zxBuiltinFunction '\v\@[a-zA-Z][a-zA-Z0-9_]*>'
 syntax match zxBuiltinField '\v(\.)@<=<(len|ptr)>'
 
