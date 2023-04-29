@@ -28,7 +28,7 @@ syntax match zxCaptureIdentifier '\v<[a-zA-Z][a-zA-Z0-9_]*>'
 
 syntax match zxUserType '\v<[A-Z][a-zA-Z0-9_]*>'
 syntax match zxBuiltinType '\v<[uif]([0-9]|size)+>'
-syntax keyword zxBuiltinType bool anytype type
+syntax keyword zxBuiltinType bool anytype type void
 
 syntax keyword zxBoolean true false
 syntax keyword zxBuiltinConstant null unreachable undefined
