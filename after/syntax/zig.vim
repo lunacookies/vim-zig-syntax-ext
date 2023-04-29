@@ -39,6 +39,7 @@ syntax keyword zxRepeat for while continue
 syntax keyword zxException error try catch
 
 syntax keyword zxKeyword pub fn const var defer return break inline test
+syntax keyword zxStructure struct enum union
 
 syntax match zxNumber '\v<[0-9]+(\.[0-9]+)?>'
 
@@ -80,6 +81,7 @@ highlight default link zxConditional Conditional
 highlight default link zxRepeat Repeat
 highlight default link zxException Exception
 highlight default link zxKeyword Keyword
+highlight default link zxStructure Structure
 highlight default link zxStringIdentifier zxIdentifier
 highlight default link zxStringIdentifierDelimiter zxStringIdentifier
 highlight default link zxCaptureIdentifier zxIdentifierDef
