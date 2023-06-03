@@ -38,7 +38,7 @@ syntax keyword zxRepeat for while continue
 
 syntax keyword zxException error try catch
 
-syntax keyword zxKeyword pub fn const var defer return break yield inline test comptime
+syntax keyword zxKeyword pub fn export const var defer return break yield inline test comptime
 syntax keyword zxStructure struct enum union
 
 syntax match zxNumber '\v<[0-9]+(\.[0-9]+)?>'
