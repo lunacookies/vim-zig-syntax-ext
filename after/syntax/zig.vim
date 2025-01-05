@@ -100,7 +100,7 @@ syntax region zxChar
 	\ contains=@Spell
 	\ oneline
 
-syntax match zxComment '//.*$'
+syntax match zxComment '//.*$' contains=@Spell
 
 highlight default link zxUnderscore Special
 highlight default link zxDelimiter Delimiter
