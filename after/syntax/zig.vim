@@ -22,6 +22,7 @@ syntax region zxCapture
 	\ matchgroup=zxDelimiter
 	\ start=' |'
 	\ end='|'
+	\ oneline
 syntax match zxCaptureIdentifier '\v<[a-zA-Z][a-zA-Z0-9_]*>'
 	\ contained
 	\ containedin=zxCapture
