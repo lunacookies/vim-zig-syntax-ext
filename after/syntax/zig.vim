@@ -33,13 +33,48 @@ syntax keyword zxBuiltinType bool anytype type void noreturn
 syntax keyword zxBoolean true false
 syntax keyword zxBuiltinConstant null unreachable undefined
 
+syntax keyword zxKeyword
+	\ addrspace
+	\ align
+	\ allowzero
+	\ anyframe
+	\ asm
+	\ async
+	\ await
+	\ break
+	\ callconv
+	\ comptime
+	\ const
+	\ continue
+	\ defer
+	\ enum
+	\ errdefer
+	\ error
+	\ export
+	\ extern
+	\ fn
+	\ inline
+	\ linksection
+	\ noalias
+	\ noinline
+	\ nosuspend
+	\ opaque
+	\ packed
+	\ pub
+	\ resume
+	\ return
+	\ struct
+	\ suspend
+	\ test
+	\ threadlocal
+	\ union
+	\ usingnamespace
+	\ var
+	\ volatile
+
 syntax keyword zxConditional if else switch and or orelse
-syntax keyword zxRepeat for while continue
-
-syntax keyword zxException error try catch
-
-syntax keyword zxKeyword pub fn export const var defer return break yield inline test comptime
-syntax keyword zxStructure struct enum union
+syntax keyword zxRepeat for while
+syntax keyword zxException try catch
 
 syntax match zxNumber '\v<[0-9]+(\.[0-9]+)?>'
 
@@ -77,11 +112,10 @@ highlight default link zxUserType Type
 highlight default link zxBuiltinType Type
 highlight default link zxBoolean Boolean
 highlight default link zxBuiltinConstant Constant
+highlight default link zxKeyword Keyword
 highlight default link zxConditional Conditional
 highlight default link zxRepeat Repeat
 highlight default link zxException Exception
-highlight default link zxKeyword Keyword
-highlight default link zxStructure Structure
 highlight default link zxStringIdentifier zxIdentifier
 highlight default link zxStringIdentifierDelimiter zxStringIdentifier
 highlight default link zxCaptureIdentifier zxIdentifierDef
