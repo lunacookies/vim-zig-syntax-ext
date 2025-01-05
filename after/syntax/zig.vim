@@ -7,7 +7,6 @@ syntax match zxDelimiter '[{}()\[\]|;]'
 syntax match zxOperator '[+\-*/&!=<>?|%]'
 
 syntax match zxFunction '\v<[a-z][a-zA-Z0-9_]*(\()@='
-syntax match zxFieldOrEnum '\v(\s+|\()@<=\.[a-z][a-zA-Z0-9_]*>'
 syntax match zxIdentifierDef '\v((var|const)\s+)@<=<[a-zA-Z][a-zA-Z0-9_]*>'
 syntax match zxBuiltinFunction '\v\@[a-zA-Z][a-zA-Z0-9_]*>'
 syntax match zxBuiltinField '\v(\.)@<=<(len|ptr)>'
@@ -104,7 +103,6 @@ highlight default link zxUnderscore Special
 highlight default link zxDelimiter Delimiter
 highlight default link zxOperator Operator
 highlight default link zxFunction Function
-highlight default link zxFieldOrEnum Constant
 highlight default link zxIdentifierDef zxIdentifier
 highlight default link zxIdentifier Identifier
 highlight default link zxBuiltinFunction Special
