@@ -16,6 +16,7 @@ syntax region zxStringIdentifier
 	\ start='@"'
 	\ skip='\\"'
 	\ end='"'
+	\ oneline
 
 syntax region zxCapture
 	\ matchgroup=zxDelimiter
@@ -84,6 +85,7 @@ syntax region zxString
 	\ skip='\\"'
 	\ end='"'
 	\ contains=@Spell
+	\ oneline
 syntax region zxString
 	\ matchgroup=zxStringQuote
 	\ start='\\\\'
@@ -96,6 +98,7 @@ syntax region zxChar
 	\ skip="\\'"
 	\ end="'"
 	\ contains=@Spell
+	\ oneline
 
 syntax match zxComment '//.*$'
 
